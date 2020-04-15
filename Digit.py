@@ -85,8 +85,8 @@ import seaborn as sns
 cm_plot = sns.heatmap(cm, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
 plt.title("Confusion Matrix Nearest Neighbour(Scratch)")
-plt.xlabel("Predicted Digit Lable")
-plt.ylabel("Actual Digit Lable")
+plt.xlabel("Predicted Digit Label")
+plt.ylabel("Actual Digit Label")
 plt.show()
 
 Accuracy = accuracy_score(y_test, y_pred)
@@ -112,8 +112,8 @@ Accuracyrf = accuracy_score(y_test, y_out)
 cm_plot = sns.heatmap(cmrf, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
 plt.title("Confusion Matrix Random-Forest Decision Trees")
-plt.xlabel("Predicted Digit Lable")
-plt.ylabel("Actual Digit Lable")
+plt.xlabel("Predicted Digit Label")
+plt.ylabel("Actual Digit Label")
 plt.show()
 
 
@@ -141,8 +141,8 @@ print('\nAccuracy of Classifier on Validation Images: ',test_accsvm)
 cm_plot = sns.heatmap(conf_matsvm, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
 plt.title("Confusion Matrix SVM")
-plt.xlabel("Predicted Digit Lable")
-plt.ylabel("Actual Digit Lable")
+plt.xlabel("Predicted Digit Label")
+plt.ylabel("Actual Digit Label")
 plt.show()
 
 
@@ -159,13 +159,13 @@ predictionsknn = model.predict(X_test)
 
 
 cmknn = confusion_matrix(y_test,predictionsknn)
-test_accsvm = accuracy_score(y_test, predictionsknn)
+test_accknn = accuracy_score(y_test, predictionsknn)
 
 
 cm_plot = sns.heatmap(cmknn, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
 plt.title("Confusion Matrix KNN")
-plt.xlabel("Predicted Digit Lable")
-plt.ylabel("Actual Digit Lable")
+plt.xlabel("Predicted Digit Label")
+plt.ylabel("Actual Digit Label")
 plt.show()
 
