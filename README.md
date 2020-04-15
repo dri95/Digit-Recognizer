@@ -15,7 +15,7 @@ In order to excute the code simply copy the data in the current working director
 ![](Results/ComparisionT.PNG)
 
 ## Confusion Matrix of the models :
-![](Results/NN(scratch).png)
+![](Results/NN.png)
 
 ![](Results/KNN.png)
 
