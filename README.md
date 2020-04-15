@@ -12,15 +12,18 @@ In order to excute the code simply copy the data in the current working director
 
 ## Comparision based on Classification Accuracy and Computation Time :
 
-![](Results/ctable.PNG)
+![](Results/comtable.PNG)
 
 ## Confusion Matrix of the models :
 ![](Results/NN(scratch).png)
 
-![](Results/Random%20Forest.png)
+![](Results/KNN.png)
 
 ![](Results/SVM.png)
 
-![](Results/KNN.png)
+![](Results/RF.png)
+
+
+
 
 
