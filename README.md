@@ -8,4 +8,5 @@ The comapritive results are show below.
 
 In order to excute the code simply copy the data in the current working directory of Python and run section by section.
 
-#<font size="+1">**Results**</font>
+Results
+------
