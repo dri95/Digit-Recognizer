@@ -12,7 +12,7 @@ In order to excute the code simply copy the data in the current working director
 
 ## Comparision based on Classification Accuracy and Computation Time :
 
-![](Results/comtable.PNG)
+![](Results/ComparisionT.PNG)
 
 ## Confusion Matrix of the models :
 ![](Results/NN(scratch).png)
