@@ -47,8 +47,6 @@ class simple_knn():
         return(y_pred)
 
     def compute_distances(self, X):
-        num_test = X.shape[0]
-        num_train = self.X_train.shape[0]
         dot_pro = np.dot(X, self.X_train.T)
         sum_square_test = np.square(X).sum(axis = 1)
         sum_square_train = np.square(self.X_train).sum(axis = 1)
@@ -170,36 +168,4 @@ plt.title("Confusion Matrix KNN")
 plt.xlabel("Predicted Digit Lable")
 plt.ylabel("Actual Digit Lable")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
