@@ -16,11 +16,11 @@ In order to excute the code simply copy the data in the current working director
 
 ### Confusion Matrix of the models
 
-<img src="Results/SVM.png" width="700" height=500">
-
 ![](Results/NN(scratch).png)
 
 ![](Results/Random%20Forest.png)
+
+![](Results/SVM.png)
 
 ![](Results/KNN.png)
 
