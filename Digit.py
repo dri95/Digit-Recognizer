@@ -4,6 +4,7 @@ from collections import Counter
 import time
 import pandas as pd
 
+#%%
 def load_data(data_dir):
     train_data = open(data_dir + "mnist_train.csv").read()
     train_data = train_data.split("\n")[1:-1]
@@ -17,8 +18,8 @@ def load_data(data_dir):
     X_test = np.array([[int(i[j]) for j in range(1,len(i))] for i in test_data])
     y_test = np.array([int(i[0]) for i in test_data])
 
-
     return X_train, y_train, X_test, y_test
+#%%
 
 # A KNN Classifier coded from scratch
 
@@ -52,8 +53,10 @@ class simple_knn():
         dists = np.sqrt(-2 * dot_pro + sum_square_train + np.matrix(sum_square_test).T)
         return(dists)
   
+#%%
 data_dir = "C:/Users/cool_/"
 X_train, y_train, X_test, y_test = load_data(data_dir)
+#%%
 
 classes = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 batch_size = 1000
