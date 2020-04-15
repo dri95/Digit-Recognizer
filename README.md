@@ -10,11 +10,13 @@ In order to excute the code simply copy the data in the current working director
 
 # Results
 
-## Comparision based on Classification Accuracy and Computation Time
+### Comparision based on Classification Accuracy and Computation Time
 
-![](Results/Comarision_Table.PNG)
+<img src="Results/SVM.png" width="700" height=500">
 
-## Confusion Matrix of the models
+![](Results/ctable.PNG)
+
+### Confusion Matrix of the models
 
 ![](Results/NN(scratch).png)
 
@@ -23,3 +25,5 @@ In order to excute the code simply copy the data in the current working director
 ![](Results/SVM.png)
 
 ![](Results/KNN.png)
+
+<img src="Results/SVM.png" width="700" height="700">
