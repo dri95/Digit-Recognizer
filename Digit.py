@@ -4,7 +4,6 @@ from collections import Counter
 import time
 import pandas as pd
 
-
 def load_data(data_dir):
     train_data = open(data_dir + "mnist_train.csv").read()
     train_data = train_data.split("\n")[1:-1]
@@ -76,11 +75,9 @@ y_pred = y_pred.astype(int)
 
 from sklearn.metrics import confusion_matrix,accuracy_score
 
-
 cm = confusion_matrix(y_test, y_pred)
 
 import seaborn as sns
-
 
 cm_plot = sns.heatmap(cm, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
@@ -94,8 +91,6 @@ Accuracy = accuracy_score(y_test, y_pred)
 
 #%%RF
 
-
-
 from sklearn.ensemble import RandomForestClassifier
 rfc = RandomForestClassifier(n_jobs=-1, n_estimators=10)
 rfc.fit(X_train, y_train)
@@ -104,10 +99,7 @@ rfc.score(X_test, y_test)
 y_out = rfc.predict(X_test)
 cmrf = confusion_matrix(y_test, y_out)
 
-
 Accuracyrf = accuracy_score(y_test, y_out)
-
-
 
 cm_plot = sns.heatmap(cmrf, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
@@ -117,10 +109,7 @@ plt.ylabel("Actual Digit Label")
 plt.show()
 
 
-
-
 #%%SVM
-
 
 from sklearn.svm import SVC
 print('SVM Classifier with gamma = 0.1; Kernel = Polynomial')
@@ -137,7 +126,6 @@ print('\nSVM Trained Classifier Accuracy: ', model_acsvmc)
 print('\nPredicted Values: ',y_predsvm)
 print('\nAccuracy of Classifier on Validation Images: ',test_accsvm)
 
-
 cm_plot = sns.heatmap(conf_matsvm, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
 plt.title("Confusion Matrix SVM")
@@ -146,9 +134,7 @@ plt.ylabel("Actual Digit Label")
 plt.show()
 
 
-
 #%%KNN
-
 
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -156,11 +142,8 @@ model = KNeighborsClassifier(n_neighbors=1)
 model.fit(X_train, y_train)
 predictionsknn = model.predict(X_test)
 
-
-
 cmknn = confusion_matrix(y_test,predictionsknn)
 test_accknn = accuracy_score(y_test, predictionsknn)
-
 
 cm_plot = sns.heatmap(cmknn, annot=True ,cmap="YlGnBu",linewidths=.1,fmt="d" )
 
