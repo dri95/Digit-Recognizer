@@ -8,6 +8,8 @@ The comaparative results are show below.
 
 In order to excute the code simply copy the data in the current working directory of Python and run section by section.
 
+###### *Note: Seed was not set, as a result, the predictive results may slightly vary everytime the code is excuted
+
 # Results
 
 ## Comparision based on Classification Accuracy and Computation Time :
