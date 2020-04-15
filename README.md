@@ -11,4 +11,4 @@ In order to excute the code simply copy the data in the current working director
 Results
 ------
 
-![](images/Comarision_Table.png)
+![](Results/Comarision_Table.png)
